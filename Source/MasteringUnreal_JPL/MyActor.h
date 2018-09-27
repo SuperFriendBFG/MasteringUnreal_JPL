@@ -2,7 +2,6 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "MyActor.generated.h"
 
@@ -23,6 +22,11 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="MyActor")
+		FString message;
+
+	UFUNCTION(BlueprintCallable, Category = "MyActor")
+		void PrintMessage();
 	
 	
 };
