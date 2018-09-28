@@ -22,9 +22,12 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+
+	// Adds Message Property to the Class
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="MyActor")
 		FString message;
 
+	// Enables Callable Printed Messages
 	UFUNCTION(BlueprintCallable, Category = "MyActor")
 		void PrintMessage();
 	

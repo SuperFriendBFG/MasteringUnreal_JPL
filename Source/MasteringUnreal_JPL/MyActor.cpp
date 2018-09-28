@@ -29,6 +29,7 @@ void AMyActor::Tick(float DeltaTime)
 //PrintMessage function
 void AMyActor::PrintMessage() {
 	if (GEngine) {
+		// OnScreenDebugMessage and its properties
 		GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Red, *message);
 	}
 }
